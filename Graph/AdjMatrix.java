@@ -91,7 +91,7 @@ public class AdjMatrix {
         sb.append(String.format("V = %d, E = %d\n", V, E));
         for (int i = 0; i < V; i++) {
             for (int j = 0; j < V; j++) {
-                sb.append(String.format("%d ", adj[i][j]));
+                sb.append(String.);
             }
             sb.append("\n");
         }
