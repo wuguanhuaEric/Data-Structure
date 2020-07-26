@@ -86,8 +86,15 @@ public class AdjMatrix {
         return sb.toString();
     }
 
-    public static void main(String[] args) {
-        AdjMatrix adjMatrix = new AdjMatrix("g.txt");
-        System.out.println(adjMatrix);
+	    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(String.format("V = %d, E = %d\n", V, E));
+        for (int i = 0; i < V; i++) {
+            for (int j = 0; j < V; j++) {
+                sb.append(String.format("%d ", adj[i][j]));
+            }
+            sb.append("\n");
+        }
+        return sb.toString();
     }
 }
